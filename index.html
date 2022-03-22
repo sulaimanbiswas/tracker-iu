@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>Dashboard - Multipurpose Bootstrap Dashboard Template </title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <link href="assets/css/loader.css" rel="stylesheet" type="text/css" />
+    <script src="assets/js/loader.js"></script>
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/plugins.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <link href="plugins/daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/scrollspyNav.css" rel="stylesheet" type="text/css" />
+    <link href="plugins/jvector/jquery-jvectormap-2.0.3.css" rel="stylesheet" type="text/css" />
+    <link href="plugins/apex/apexcharts.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/dashboard/dash_1.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/dashboard/dash_2.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        .layout-px-spacing {
+            min-height: calc(100vh - 166px) !important;
+        }
+    </style>
+
+    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+
+</head>
+
+<body>
+    <!-- BEGIN LOADER -->
+    <div id="load_screen">
+        <div class="loader">
+            <div class="loader-content">
+                <div class="spinner-grow align-self-center"></div>
+            </div>
+        </div>
+    </div>
+    <!--  END LOADER -->
+
+    <!--  BEGIN NAVBAR  -->
+    <div class="header-container fixed-top">
+        <header class="header navbar navbar-expand-sm">
+
+            <ul class="navbar-item theme-brand flex-row  text-center">
+                <li class="nav-item theme-logo">
+                    <a href="index.html">
+                        <img src="assets/img/90x90.jpg" class="navbar-logo" alt="logo">
+                    </a>
+                </li>
+                <li class="nav-item theme-text">
+                    <a href="index.html" class="nav-link"> CORK </a>
+                </li>
+            </ul>
+
+            <ul class="navbar-item flex-row ml-md-auto">
+
+                <li class="nav-item dropdown user-profile-dropdown">
+                    <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <img src="assets/img/90x90.jpg" alt="avatar">
+                    </a>
+                    <div class="dropdown-menu position-absolute" aria-labelledby="userProfileDropdown">
+                        <div class="">
+                            <div class="dropdown-item">
+                                <a class="" href="user_profile.html"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-user">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg> Profile</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a class="" href="apps_mailbox.html"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-inbox">
+                                        <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
+                                        <path
+                                            d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z">
+                                        </path>
+                                    </svg> Inbox</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a class="" href="lockscreen.html"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-lock">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                    </svg> Lock Screen</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a class="" href="login.html"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-log-out">
+                                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                        <polyline points="16 17 21 12 16 7"></polyline>
+                                        <line x1="21" y1="12" x2="9" y2="12"></line>
+                                    </svg> Sign Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </header>
+    </div>
+    <!--  END NAVBAR  -->
+
+    <!--  BEGIN NAVBAR  -->
+    <div class="sub-header-container row" style="background: #1a1c2d;">
+
+        <header class="col-md-9 header navbar navbar-expand-sm">
+            <a href="javascript:void(0);" class="sidebarCollapse" data-placement="bottom"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-menu">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg></a>
+
+            <ul class="navbar-nav flex-row">
+                <li>
+                    <div class="page-header">
+                        <div class="page-title">
+                            <h3>Dashboard</h3>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </header>
+
+
+
+        <div class="col-md-3 my-auto text-right">
+            <div id="reportrange" class=" " style="cursor: pointer; padding: 5px 10px; border: 1px solid #ccc;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-calendar">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>&nbsp;
+                <span></span> <i class="fa fa-caret-down"></i>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    </div>
+    <!--  END NAVBAR  -->
+
+    <!--  BEGIN MAIN CONTAINER  -->
+    <div class="main-container" id="container">
+
+        <div class="overlay"></div>
+        <div class="search-overlay"></div>
+
+        <!--  BEGIN SIDEBAR  -->
+        <div class="sidebar-wrapper sidebar-theme">
+
+            <nav id="sidebar">
+                <div class="shadow-bottom"></div>
+
+                <ul class="list-unstyled menu-categories" id="accordionExample">
+
+
+                    <li class="menu">
+                        <a href="javascript:void(0);" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-home">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                </svg>
+                                <span> Dashboard</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-airplay">
+                                    <path
+                                        d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1">
+                                    </path>
+                                    <polygon points="12 15 17 21 7 21 12 15"></polygon>
+                                </svg>
+                                <span> Menu 2</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="submenu" data-parent="#accordionExample">
+                            <li>
+                                <a href="javascript:void(0);"> Submenu 1 </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"> Submenu 2 </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-file">
+                                    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                                    <polyline points="13 2 13 9 20 9"></polyline>
+                                </svg>
+                                <span> Menu 3</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="submenu2" data-parent="#accordionExample">
+                            <li>
+                                <a href="javascript:void(0);"> Submenu 1 </a>
+                            </li>
+                            <li>
+                                <a href="#sm2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                    Submenu 2 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-chevron-right">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg> </a>
+                                <ul class="collapse list-unstyled sub-submenu" id="sm2" data-parent="#submenu2">
+                                    <li>
+                                        <a href="javascript:void(0);"> Sub-Submenu 1 </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"> Sub-Submenu 2 </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"> Sub-Submenu 3 </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+        <!--  END SIDEBAR  -->
+
+        <!--  BEGIN CONTENT PART  -->
+        <div id="content" class="main-content">
+            <div class="layout-px-spacing">
+
+                <div class="row layout-top-spacing">
+
+                    <!-- Click -->
+                    <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 col-12 layout-spacing">
+                        <div class="widget widget-one">
+                            <div class="widget-heading">
+                                <h6 class="">Click</h6>
+                            </div>
+                            <div class="w-chart">
+                                <div class="w-chart-section">
+                                    <div class="w-detail">
+                                        <p class="w-stats">423,964</p>
+                                    </div>
+                                    <div class="w-chart-render-one">
+                                        <div id="click"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Click -->
+
+                    <!-- Unique Click -->
+                    <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 col-12 layout-spacing">
+                        <div class="widget widget-one">
+                            <div class="widget-heading">
+                                <h6 class="">Unique Click</h6>
+                            </div>
+                            <div class="w-chart">
+                                <div class="w-chart-section">
+                                    <div class="w-detail">
+                                        <p class="w-stats">423,964</p>
+                                    </div>
+                                    <div class="w-chart-render-one">
+                                        <div id="unique-click"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Unique Click -->
+
+                    <!-- Conversions -->
+                    <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 col-12 layout-spacing">
+                        <div class="widget widget-one">
+                            <div class="widget-heading">
+                                <h6 class="">Conversions</h6>
+                            </div>
+                            <div class="w-chart">
+                                <div class="w-chart-section">
+                                    <div class="w-detail">
+                                        <p class="w-stats">423,964</p>
+                                    </div>
+                                    <div class="w-chart-render-one">
+                                        <div id="conversions"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Conversions -->
+
+                    <!-- Payout -->
+                    <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 col-12 layout-spacing">
+                        <div class="widget widget-one">
+                            <div class="widget-heading">
+                                <h6 class="">Payout</h6>
+                            </div>
+                            <div class="w-chart">
+                                <div class="w-chart-section">
+                                    <div class="w-detail">
+                                        <p class="w-stats">$ 423,964</p>
+                                    </div>
+                                    <div class="w-chart-render-one">
+                                        <div id="payout"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Payout -->
+
+                    <!-- Revenue -->
+                    <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 col-12 layout-spacing">
+                        <div class="widget widget-one">
+                            <div class="widget-heading">
+                                <h6 class="">Revenue</h6>
+                            </div>
+                            <div class="w-chart">
+                                <div class="w-chart-section">
+                                    <div class="w-detail">
+                                        <p class="w-stats">$ 423,964</p>
+                                    </div>
+                                    <div class="w-chart-render-one">
+                                        <div id="revenue"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Revenue -->
+
+                    <!-- Profit -->
+                    <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 col-12 layout-spacing">
+                        <div class="widget widget-one">
+                            <div class="widget-heading">
+                                <h6 class="">Profit</h6>
+                            </div>
+                            <div class="w-chart">
+                                <div class="w-chart-section">
+                                    <div class="w-detail">
+                                        <p class="w-stats">$ 423,964</p>
+                                    </div>
+                                    <div class="w-chart-render-one">
+                                        <div id="profit"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Profit -->
+
+                    <!-- Performance -->
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
+                        <div class="widget widget-chart-one">
+                            <div class="widget-heading">
+                                <h5 class="">Performance</h5>
+                                <div class="task-action">
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle" href="#" role="button" id="pendingTask"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-more-horizontal">
+                                                <circle cx="12" cy="12" r="1"></circle>
+                                                <circle cx="19" cy="12" r="1"></circle>
+                                                <circle cx="5" cy="12" r="1"></circle>
+                                            </svg>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="pendingTask"
+                                            style="will-change: transform;">
+                                            <a class="dropdown-item" href="javascript:void(0);">Weekly</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Monthly</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Yearly</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="widget-content">
+                                <div id="revenueMonthly"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Performance -->
+
+                    <!-- Top Offers -->
+                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
+                        <div class="widget widget-table-two">
+
+                            <div class="widget-heading">
+                                <h5 class="">Top Offers</h5>
+                            </div>
+
+                            <div class="widget-content">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <div class="th-content th-heading" style="width: 25px;">ID</div>
+                                                </th>
+                                                <th>
+                                                    <div class="th-content th-heading">Offer Name</div>
+                                                </th>
+                                                <th>
+                                                    <div class="th-content th-heading">Click</div>
+                                                </th>
+                                                <th>
+                                                    <div class="th-content th-heading">Conversions</div>
+                                                </th>
+                                                <th>
+                                                    <div class="th-content th-heading">CR</div>
+                                                </th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="td-content"><span class="">01</span></div>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        <div class="td-content name">Only flirt</div>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content">46894</div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">256</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">69.58%</span></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="td-content"><span class="">02</span></div>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        <div class="td-content name">Erotilink Mobile - IT</div>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span>46894</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">256</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">69.58%</span></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="td-content"><span class="">03</span></div>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        <div class="td-content name">ncontrieleganti SOI</div>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content">46894</div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">256</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">69.58%</span></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="td-content"><span class="">04</span></div>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        <div class="td-content name">StripBang - SOI</div>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content">46894</div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">256</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">69.58%</span></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="td-content"><span class="">05</span></div>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        <div class="td-content name">EasyGranny Mobile - SOI</div>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content">46894</div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">256</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">69.58%</span></div>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Top Offers -->
+
+                    <!-- Top Affiliates -->
+                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
+                        <div class="widget widget-table-two">
+
+                            <div class="widget-heading">
+                                <h5 class="">Top Affiliates</h5>
+                            </div>
+
+                            <div class="widget-content">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <div class="th-content th-heading" style="width: 25px;">ID</div>
+                                                </th>
+                                                <th>
+                                                    <div class="th-content th-heading">Offer Name</div>
+                                                </th>
+                                                <th>
+                                                    <div class="th-content th-heading">Click</div>
+                                                </th>
+                                                <th>
+                                                    <div class="th-content th-heading">Conversions</div>
+                                                </th>
+                                                <th>
+                                                    <div class="th-content th-heading">Payout</div>
+                                                </th>
+
+                                                <th>
+                                                    <div class="th-content th-heading">Revenue</div>
+                                                </th>
+
+                                                <th>
+                                                    <div class="th-content th-heading">Profit</div>
+                                                </th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="td-content"><span class="">01</span></div>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        <div class="td-content name">Sulaiman Biswas</div>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">4964</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">256</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$150</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$180</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$30</span></div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="td-content"><span class="">02</span></div>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        <div class="td-content name">Md Abdullah Al Mamun</div>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">4964</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">256</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$150</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$180</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$30</span></div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="td-content"><span class="">03</span></div>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        <div class="td-content name">Shohan Sikder</div>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">4964</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">256</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$150</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$180</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$30</span></div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="td-content"><span class="">04</span></div>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        <div class="td-content name">Shopon Dewan</div>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">4964</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">256</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$150</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$180</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$30</span></div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="td-content"><span class="">05</span></div>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        <div class="td-content name">Asaduzzaman Asad</div>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">4964</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">256</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$150</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$180</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$30</span></div>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Top Affiliates -->
+
+
+
+                    <!-- Top Advertisers -->
+                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
+                        <div class="widget widget-table-two">
+
+                            <div class="widget-heading">
+                                <h5 class="">Top Advertisers</h5>
+                            </div>
+
+                            <div class="widget-content">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <div class="th-content th-heading" style="width: 25px;">ID</div>
+                                                </th>
+                                                <th>
+                                                    <div class="th-content th-heading">Offer Name</div>
+                                                </th>
+                                                <th>
+                                                    <div class="th-content th-heading">Click</div>
+                                                </th>
+                                                <th>
+                                                    <div class="th-content th-heading">Conversions</div>
+                                                </th>
+                                                <th>
+                                                    <div class="th-content th-heading">Payout</div>
+                                                </th>
+
+                                                <th>
+                                                    <div class="th-content th-heading">Revenue</div>
+                                                </th>
+
+                                                <th>
+                                                    <div class="th-content th-heading">Profit</div>
+                                                </th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="td-content"><span class="">01</span></div>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        <div class="td-content name">Sulaiman Biswas</div>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">4964</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">256</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$150</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$180</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$30</span></div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="td-content"><span class="">02</span></div>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        <div class="td-content name">Md Abdullah Al Mamun</div>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">4964</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">256</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$150</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$180</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$30</span></div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="td-content"><span class="">03</span></div>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        <div class="td-content name">Shohan Sikder</div>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">4964</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">256</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$150</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$180</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$30</span></div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="td-content"><span class="">04</span></div>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        <div class="td-content name">Shopon Dewan</div>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">4964</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">256</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$150</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$180</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$30</span></div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="td-content"><span class="">05</span></div>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        <div class="td-content name">Asaduzzaman Asad</div>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">4964</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">256</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$150</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$180</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="td-content"><span class="">$30</span></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Top Advertisers -->
+
+                    <div id="mapWorld" class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
+                        <div class="statbox widget box box-shadow">
+                            <div class="widget-header">
+                                <div class="row">
+                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                        <h4>World</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-content">
+                                <div id="world-map" style="height: 320px"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="footer-wrapper">
+                <div class="footer-section f-section-1">
+                    <p class="">Copyright © 2021 <a target="_blank" href="https://designreset.com">DesignReset</a>, All
+                        rights reserved.</p>
+                </div>
+                <div class="footer-section f-section-2">
+                    <p class="">Coded with <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                            </path>
+                        </svg></p>
+                </div>
+            </div>
+        </div>
+        <!--  END CONTENT PART  -->
+
+    </div>
+    <!-- END MAIN CONTAINER -->
+
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        $(document).ready(function () {
+            App.init();
+        });
+    </script>
+    <script src="assets/js/custom.js"></script>
+    <script src="plugins/jvector/jvector_script.js"></script>
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    <script src="plugins/apex/apexcharts.min.js"></script>
+    <script src="assets/js/dashboard/dash_1.js"></script>
+    <script src="assets/js/dashboard/dash_2.js"></script>
+    <script src="assets/js/scrollspyNav.js"></script>
+    <script src="plugins/jvector/jquery-jvectormap-2.0.3.min.js"></script>
+    <script src="plugins/jvector/africa/jquery-jvectormap-africa-en.js"></script>
+    <script src="plugins/jvector/asia/jquery-jvectormap-asia-en.js"></script>
+    <script src="plugins/jvector/continents/jquery-jvectormap-continents-en.js"></script>
+    <script src="plugins/jvector/europe/jquery-jvectormap-europe-en.js"></script>
+    <script src="plugins/jvector/north_america/jquery-jvectormap-north-america-en.js"></script>
+    <script src="plugins/jvector/oceania/jquery-jvectormap-oceanina-en.js"></script>
+    <script src="plugins/jvector/south-america/jquery-jvectormap-south-america-en.js"></script>
+    <script src="plugins/jvector/worldmap_script/jquery-jvectormap-world-mill-en.js"></script>
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() ==
+                            "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date()
+                                .valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        } else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+
+            var start = moment().subtract(29, 'days');
+            var end = moment();
+
+            function cb(start, end) {
+                $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+            }
+
+            $('#reportrange').daterangepicker({
+                startDate: start,
+                endDate: end,
+                ranges: {
+                    'Today': [moment(), moment()],
+                    'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                    'This Month': [moment().startOf('month'), moment().endOf('month')],
+                    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1,
+                        'month').endOf('month')]
+                }
+            }, cb);
+
+            cb(start, end);
+
+        });
+    </script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="plugins/daterangepicker/daterangepicker.min.js"></script>
+
+
+</body>
+
+</html>
